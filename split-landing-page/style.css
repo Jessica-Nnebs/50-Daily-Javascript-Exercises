@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 :root {
-    --left-bg-color: rgba(87, 84, 236, 0.7);
+    --left-bg-color: rgba(175, 109, 230, 0.7);
     --right-bg-color: rgba(43, 43, 43, 0.8);
     --left-btn-hover-color: rgba(87, 84, 236, 1);
     --right-btn-hover-color: rgba(28, 122, 28, 1);
-    --hover-width: 75%;
-    --other-width: 25%;
+    --hover-width: 65%;
+    --other-width: 35%;
     --speed: 1000ms;
 }
 
@@ -74,7 +74,7 @@ h1 {
 
 .split.left {
     left: 0;
-    background: url("https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cHM1fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+    background: url("https://images.unsplash.com/photo-1605835963874-a7c87f56259e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -97,7 +97,7 @@ h1 {
 
 .split.right {
     right: 0;
-    background: url("https://images.unsplash.com/photo-1611138290962-2c550ffd4002?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHhib3h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+    background: url("https://images.unsplash.com/photo-1612801799890-4ba4760b6590?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -106,7 +106,7 @@ h1 {
 .split.left,
 .split.right::before,
 .split.left::before {
-    transition: all var (--speed) ease-in-out;
+    transition: all var(--speed) ease-in-out;
 }
 
 .hover-left .left {
@@ -128,6 +128,7 @@ h1 {
 @media (max-width: 800px) {
     h1 {
         font-size: 2rem;
+        top: 30%;
     }
     .btn {
         padding: 1.2rem;
